@@ -1,0 +1,103 @@
+/* Skill Section */
+.skill-section {
+    width: 90%;
+    max-width: 1200px; /* Prevent excessive stretching */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .skill-title {
+    color: #171717;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Skill Links Container */
+  .skill-links {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to next row when necessary */
+    justify-content: center; /* Center items */
+    gap: 15px; /* Spacing between items */
+  }
+  
+  /* Skill Link Styles */
+  .skill-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 0.9rem;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(25% - 15px); /* 3 skills per row on large screens */
+    max-width: calc(25% - 15px);
+    text-align: center;
+    cursor:auto
+  }
+  
+  .skill-link:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    color: #f0a500;;
+  }
+  
+  /* Skill Icon */
+  .skill-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
+    object-fit: contain;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skill-section {
+      width: 95%;
+    }
+  
+    .skill-title {
+      font-size: 1.6rem;
+    }
+  
+    .skill-link {
+        flex: 1 1 calc(25% - 15px); /* 3 skills per row */
+        max-width: calc(25% - 15px);
+      font-size: 0.85rem; /* Adjust font size */
+      padding: 8px 12px;
+    }
+  
+    .skill-icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-section {
+      width: 100%; /* Full width for small devices */
+      padding: 10px;
+    }
+  
+    .skill-title {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+  
+    .skill-link {
+        flex: 1 1 calc(33.333% - 15px); /* 3 skills per row */
+        max-width: calc(33.333% - 15px);
+        font-size: 0.8rem; /* Smaller font size */
+        padding: 8px;
+    }
+  
+    .skill-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
