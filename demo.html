@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text with Lines</title>
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        
+        /* Text with lines styles */
+        .text-with-lines {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #333;
+        }
+        
+        .text {
+            padding: 0 20px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        /* Additional demo styles */
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #444;
+        }
+        
+        .variations {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        /* Style variations */
+        .thick-line .line {
+            height: 3px;
+            background-color: #2c3e50;
+        }
+        
+        .dashed-line .line {
+            height: 1px;
+            background-image: linear-gradient(to right, #333 50%, transparent 50%);
+            background-size: 10px 1px;
+        }
+        
+        .gradient-line .line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #3498db, transparent);
+        }
+        
+        .colored .line {
+            background-color: #e74c3c;
+        }
+        
+        .colored .text {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Text with Centered Lines</h1>
+        
+        <!-- Basic Example -->
+        <div class="text-with-lines">
+            <div class="line"></div>
+            <div class="text">BASIC EXAMPLE</div>
+            <div class="line"></div>
+        </div>
+        
+        <!-- Different Style Variations -->
+        <div class="variations">
+            <!-- Thick Line -->
+            <div class="text-with-lines thick-line">
+                <div class="line"></div>
+                <div class="text">THICK LINES</div>
+                <div class="line"></div>
+            </div>
+            
+            <!-- Dashed Line -->
+            <div class="text-with-lines dashed-line">
+                <div class="line"></div>
+                <div class="text">DASHED LINES</div>
+                <div class="line"></div>
+            </div>
+            
+            <!-- Gradient Line -->
+            <div class="text-with-lines gradient-line">
+                <div class="line"></div>
+                <div class="text">GRADIENT LINES</div>
+                <div class="line"></div>
+            </div>
+            
+            <!-- Colored Version -->
+            <div class="text-with-lines colored">
+                <div class="line"></div>
+                <div class="text">COLORED VERSION</div>
+                <div class="line"></div>
+            </div>
+            
+            <!-- Longer Text Example -->
+            <div class="text-with-lines">
+                <div class="line"></div>
+                <div class="text">LONGER TEXT EXAMPLE TO SHOW FLEXIBILITY</div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

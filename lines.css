@@ -1,0 +1,28 @@
+
+        /* Text with lines styles */
+        .text-with-lines {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background-color: #333;
+        }
+        
+        .text {
+            padding: 0 20px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        /* Style variations */
+        
+        .gradient-line .line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ff9640, transparent);
+        }

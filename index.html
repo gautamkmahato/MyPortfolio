@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="lines.css">
   <title>Responsive Navbar</title>
 </head>
+
 <body>
 
   <nav class="navbar">
@@ -55,30 +59,69 @@
       </div>
     </div>
     <div class="right-column">
-      <div class="about">
-        <h2 class="title">Experience</h2>
-        <!-- <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Suspendisse facilisis nulla ut mi malesuada, vel congue justo scelerisque. 
-            Phasellus a efficitur libero. Nam et erat eu magna aliquet pellentesque vel quis ex.
-        </p> -->
-        <div class="card--work-history">
-          <h3>PROJECT ENGINNER | WIPRO</h3>
-          <p>07/2021 - Present</p>
-          <ul>
-            <li>Designed and developed Restful APIs for different modules in the project as per the requirement using Spring boot.</li>
-            <li>Developed web pages using HTML5, CSS3,React, JavaScript, Bootstrap, JSON.</li>
-            <li>Maintained the API development workflow using SwaggerHub by removing and fixing bugs.</li>
-            <li>Performed, revision and expansion of existing programs to resolve critical bugs, increase efficiency and adapt to new requirements.</li>
-            <li>Engaged in code fixes and feature additions under the direction of senior developers.</li>
-          </ul>
+      <div class="skill">
+        <!-- Gradient Line -->
+    <div class="text-with-lines gradient-line">
+      <div class="line"></div>
+      <div class="text">SKILLS</div>
+      <div class="line"></div>
+  </div>
+        <div class="skill-links">
+          <a href="#" class="skill-link">
+            <img src="./assets/javascript.png" alt="Facebook Icon" class="skill-icon">
+            JavaScript
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/react.png" alt="LinkedIn Icon" class="skill-icon">
+            React Js
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/node_js.png" alt="Twitter Icon" class="skill-icon">
+            Node Js
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/next.png" alt="Facebook Icon" class="skill-icon">
+            Next Js
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/java_script.png" alt="LinkedIn Icon" class="skill-icon">
+            Express Js
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/java.png" alt="Twitter Icon" class="skill-icon">
+            Java
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/springBoot.png" alt="Facebook Icon" class="skill-icon">
+            Spring Boot
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/mysql.png" alt="LinkedIn Icon" class="skill-icon">
+            MySql
+          </a>
+          <a href="#" class="skill-link">
+            <img src="github.png" alt="Twitter Icon" class="skill-icon">
+            Git/ Github
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/microservice.png" alt="Twitter Icon" class="skill-icon">
+            Microservice
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/drizzle.png" alt="Twitter Icon" class="skill-icon">
+            Drizzle
+          </a>
+          <a href="#" class="skill-link">
+            <img src="./assets/dsa.png" alt="Twitter Icon" class="skill-icon">
+            Data Structure & Algorithm
+          </a>
+        </div>
       </div>
-      </div>
-      
+
     </div>
   </section>
 
-  <section class="skill-section">
+  <!-- <section class="skill-section">
     <div class="skill">
       <h2 class="skill-title">Skills</h2>
       <div class="skill-links">
@@ -132,48 +175,102 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="portfolio">
-    <h2 class="section-title">My Projects</h2>
+    <!-- Gradient Line -->
+    <div class="text-with-lines gradient-line">
+      <div class="line"></div>
+      <div class="text">MY WORK</div>
+      <div class="line"></div>
+  </div>
     <div class="gallery">
       <!-- Card 1 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 1" class="card-image">
+        <img src="./assets/email-craft.jpg" alt="Project 1" class="card-image">
         <div class="card-content">
-          <h2 class="card-title">A Text to Speech AI App</h2>
-          <!-- <p class="card-description">
-            A brief description of the project goes here. Explain the purpose or interesting details.
+          <h2 class="card-title">EmailCraft</h2>
+          <p class="card-description">
+            EmailCraft is an AI-powered email template generator and automation service for seamless email campaigns.
           </p>
-          <a href="#" class="card-link">View Project</a> -->
+          <a href="#" class="card-link">View Project</a>
         </div>
       </div>
       <!-- Card 2 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 2" class="card-image">
+        <img src="./assets/weaver.jpg" alt="Project 2" class="card-image">
         <div class="card-content">
-          <h2 class="card-title">Technical Documentation Website</h2>
-          <!-- <p class="card-description">
-            A brief description of the project goes here. Explain the purpose or interesting details.
+          <h2 class="card-title">Weaver AI</h2>
+          <p class="card-description">
+            WeaverAI provides AI-powered APIs for businesses, streamlining operations and enhancing automation
+            capabilities.
           </p>
-          <a href="#" class="card-link">View Project</a> -->
+          <a href="#" class="card-link">View Project</a>
         </div>
       </div>
       <!-- Card 3 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Project 3" class="card-image">
+        <img src="./assets/vaani-wave.jpg" alt="Project 3" class="card-image">
         <div class="card-content">
-          <h2 class="card-title">Media Editing Website</h2>
-          <!-- <p class="card-description">
-            A brief description of the project goes here. Explain the purpose or interesting details.
+          <h2 class="card-title">Waaniwave AI</h2>
+          <p class="card-description">
+            VaaniWave converts text into natural speech with multiple voices, enhancing accessibility and content
+            creation.
           </p>
-          <a href="#" class="card-link">View Project</a> -->
+          <a href="#" class="card-link">View Project</a>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="./assets/sahaj-nyay.jpg" alt="Project 3" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">Sahaj Nyay</h2>
+          <p class="card-description">
+            Professional law firm website design offering sleek, user-friendly, and responsive layouts.
+          </p>
+          <a href="#" class="card-link">View Project</a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="./assets/latent.jpg" alt="Project 3" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">Latent App</h2>
+          <p class="card-description">
+            India’s premier online streaming service with a sleek and modern web design interface.
+          </p>
+          <a href="#" class="card-link">View Project</a>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="./assets/sql-craft.jpg" alt="Project 3" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">SqlCraft</h2>
+          <p class="card-description">
+            AI-powered SQLite editor for web apps, streamlining database management with advanced features.
+          </p>
+          <a href="#" class="card-link">View Project</a>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="card">
+        <img src="./assets/prody.jpg" alt="Project 3" class="card-image">
+        <div class="card-content">
+          <h2 class="card-title">Prody Dashboard</h2>
+          <p class="card-description">
+            Collection of modern, customizable dashboard designs for a seamless user experience.
+          </p>
+          <a href="#" class="card-link">View Project</a>
         </div>
       </div>
     </div>
   </section>
 
-  
+
+
+
   <script src="script.js"></script>
 </body>
+
 </html>
