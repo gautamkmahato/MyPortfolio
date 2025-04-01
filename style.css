@@ -92,7 +92,7 @@
         flex: 1 1 calc(33.333% - 15px); /* 3 skills per row */
         max-width: calc(33.333% - 15px);
         font-size: 0.8rem; /* Smaller font size */
-        padding: 8px;
+        /* padding: 8px; */
     }
   
     .skill-icon {
